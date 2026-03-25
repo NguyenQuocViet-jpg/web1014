@@ -1,0 +1,8 @@
+.feature_item{
+    width: 20%;
+    background-color: aquamarine;
+    float: left;
+    margin: 4px 4px 4px 4px;
+    padding: 5px 5px 5px 5px;
+    height: 270px;
+}
