@@ -1,0 +1,23 @@
+.Product_container{
+    display: grid;
+    grid-template-columns: 300px minmax(300px, auto);
+    width:  70%;
+    margin: 0 auto;
+    gap: 30px;
+}
+.sidebar{
+    background-color: beige;
+}
+.product_list{
+    background-color: rgb(224, 136, 28);
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 30px;
+}
+.product{
+    min-height: 400px;
+    background-color: darkcyan;
+}
+.banner{
+    grid-column: span 3;
+}

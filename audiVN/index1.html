@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>ASM1-Nguyễn Quốc Việt-Audi_Modal</title>
+    <link rel="stylesheet" href="Style1.css">
+</head>
+
+<body>
+
+    <header class="top1">
+        <div class="top1_content">
+            <input type="checkbox" id="mobile-menu-check" style="display: none;">
+            <div class="logo">
+                <a class="logo-link" href="index.html">
+                    <img src="img/Audi-Logo-PNG-File.png" alt="Audi">
+                </a>
+                <label class="hamburger-menu" for="mobile-menu-check">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </label>
+            </div>
+
+            <ul class="menu">
+                <li><a href="#">All Models</a></li>
+                <li><a href="#">Aftersales & Servicing</a></li>
+                <li><a href="#">News & Events</a></li>
+                <li><a href="#">Contact Us</a></li>
+                <li><a href="DangKy.html">Book a test drive</a></li>
+            </ul>
+        </div>
+    </header>
+
+    <div class="container">
+        <input type="radio" name="carfilter" id="filter-all" checked style="display:none">
+        
+        <input type="radio" name="carfilter" id="filter-electric" style="display:none">
+        <input type="radio" name="carfilter" id="filter-petrol" style="display:none">
+        
+        <input type="radio" name="carfilter" id="filter-etron-gt" style="display:none">
+        <input type="radio" name="carfilter" id="filter-q6" style="display:none">
+        <input type="radio" name="carfilter" id="filter-a5" style="display:none">
+        <input type="radio" name="carfilter" id="filter-a6" style="display:none">
+        
+        <input type="radio" name="carfilter" id="filter-sportback" style="display:none">
+        <input type="radio" name="carfilter" id="filter-sportscar" style="display:none">
+        <input type="radio" name="carfilter" id="filter-suv" style="display:none">
+        <input type="radio" name="carfilter" id="filter-sedan" style="display:none">
+        <input type="radio" name="carfilter" id="filter-coupe" style="display:none">
+
+        <div class="type">
+            <div class="drive-type">
+                <h5>Drive type</h5>
+                <label for="filter-electric">Fully Electric Modals</label>
+                <label for="filter-petrol">Petrol/Diesel</label>
+            </div>
+
+            <div class="modal">
+                <h5>Modal</h5>
+                <label for="filter-etron-gt">e-tron GT</label>
+                <label for="filter-q6">Q6 e-tron</label>
+                <label for="filter-a5">A5</label>
+                <label for="filter-a6">A6</label>
+                <a href="#">A7</a>
+                <a href="#">A8</a>
+                <a href="#">Q2</a>
+                <a href="#">Q3</a>
+                <a href="#">Q5</a>
+                <a href="#">Q7</a>
+                <a href="#">Q8</a>
+            </div>
+
+            <div class="body-type">
+                <h5>Body type</h5>
+                <label for="filter-sportback">Sportback</label>
+                <label for="filter-sportscar">Sportscar</label>
+                <label for="filter-suv">SUV</label>
+                <label for="filter-sedan">Sedan</label>
+                <label for="filter-coupe">Coupé</label>
+            </div>
+        </div>
+
+        <div class="models">
+            <h5><label for="filter-all" style="cursor: pointer; text-decoration: underline;">All models(5)</label></h5>
+            <div class="models-container" style="display: flex; gap: 20px; flex-wrap: wrap;">
+                <a href="detail_etron_gt.html" class="car-item car-electric car-etron-gt car-sportback car-sportscar">
+                    <div class="discover">
+                        <img src="img/etron_gt_quattro.webp" alt="e-tron GT quattro">
+                        <div class="text">
+                            <p>e-tron GT quattro</p>
+                            <span class="a">Discover</span>
+                        </div>
+                    </div>
+                </a>
+
+                <a href="detail_rs_etron.html" class="car-item car-electric car-etron-gt car-sportscar">
+                    <div class="discover">
+                        <img src="img/e_tron_gt.webp" alt="RS e-tron GT">
+                        <div class="text">
+                            <p>RS e-tron GT</p>
+                            <span class="a">Discover</span>
+                        </div>
+                    </div>
+                </a>
+
+                <a href="detail_q6.html" class="car-item car-electric car-q6 car-suv">
+                    <div class="discover">
+                        <img src="img/Q6_E_tron.webp" alt="Q6 e-tron">
+                        <div class="text">
+                            <p>Q6 e-tron</p>
+                            <span class="a">Discover</span>
+                        </div>
+                    </div>
+                </a>
+
+                <a href="detail_a5.html" class="car-item car-petrol car-a5 car-sedan car-coupe car-sportback">
+                    <div class="discover">
+                        <img src="img/a5.webp" alt="A5">
+                        <div class="text">
+                            <p>A5</p>
+                            <span class="a">Discover</span>
+                        </div>
+                    </div>
+                </a>
+
+                <a href="detail_a6.html" class="car-item car-petrol car-a6 car-sedan">
+                    <div class="discover">
+                        <img src="img/a6.webp" alt="A6">
+                        <div class="text">
+                            <p>A6</p>
+                            <span class="a">Discover</span>
+                        </div>
+                    </div>
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <footer class="footer">
+        <div class="footer_container">
+
+            <div>
+                <h4>All Models</h4>
+                <p>All Modes</p>
+                <p>Electriv</p>
+                <p>Sedan</p>
+                <p>SUV</p>
+                <p>coupé</p>
+                <p>Sportback</p>
+                <p>Sportscar</p>
+            </div>
+
+            <div>
+                <h4>Aftersales & Servicing</h4>
+                <p>Audi Service</p>
+                <p>Service And Maintenance</p>
+                <p>Recall Campaign Lookup</p>
+                <p>Book Your Service</p>
+                <p>Audi Mobile Service schedule 2026</p>
+            </div>
+
+            <div>
+                <h4>News & Events</h4>
+                <p>2026</p>
+                <p>2025</p>
+            </div>
+
+            <div>
+                <h4>Contact Us</h4>
+                <p>Dealership Information</p>
+                <p>Carerr with Audi</p>
+                <p>Book A Test Drive</p>
+                <p>Audi Custemer Care</p>
+                <p>The AUdi Brand</p>
+            </div>
+
+        </div>
+    </footer>
+
+</body>
+
+</html>

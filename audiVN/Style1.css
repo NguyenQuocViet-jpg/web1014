@@ -1,0 +1,332 @@
+body {
+  margin: 0;
+  background-color: #101319;
+  color: white;
+  font-family: Arial;
+}
+
+.container {
+  /* width: 90%; */
+  margin: auto;
+
+}
+
+.top {
+  max-width: 1300px;
+  margin: 0 auto;
+  padding: 0 40px
+}
+
+.top1 {
+  display: flex;
+  align-items: center;
+  height: 70px;
+  background-color: black;
+}
+
+.top1_content {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 20px;
+  margin: 0 20px;
+}
+
+.top1_content ul {
+  display: flex;
+  list-style: none;
+  margin-left: 20px;
+  margin-right: 0;
+  gap: 20px;
+}
+
+.top1_content li {
+  margin-right: 20px;
+}
+
+.top1_content a {
+  color: white;
+  text-decoration: none;
+}
+
+.top1 {
+  position: relative;
+  z-index: 1000;
+}
+
+.logo-toggle { display: none; }
+.logo-link { display: block; }
+
+/* ===== HAMBURGER MENU ===== */
+.hamburger-menu {
+  display: none;
+  flex-direction: column;
+  cursor: pointer;
+  gap: 6px;
+  position: absolute;
+  left: 20px;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.hamburger-menu span {
+  display: block;
+  width: 25px;
+  height: 3px;
+  background-color: white;
+  border-radius: 3px;
+  transition: all 0.3s ease;
+}
+
+/* Hamburger animation when menu is checked */
+#mobile-menu-check:checked ~ .logo .hamburger-menu span:nth-child(1) {
+  transform: rotate(45deg) translate(8px, 8px);
+}
+
+#mobile-menu-check:checked ~ .logo .hamburger-menu span:nth-child(2) {
+  opacity: 0;
+}
+
+#mobile-menu-check:checked ~ .logo .hamburger-menu span:nth-child(3) {
+  transform: rotate(-45deg) translate(7px, -7px);
+}
+
+@media (max-width: 768px) {
+  .top1_content {
+    justify-content: center;
+    width: 100%;
+    margin-left: 0 !important;
+    position: relative;
+  }
+  .logo {
+    display: flex;
+    justify-content: center;
+  }
+  .logo-link { 
+    display: block;
+  }
+  .hamburger-menu { 
+    display: flex;
+  }
+
+  .top1_content ul.menu,
+  .top1_content nav .menu {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100%;
+    background-color: #000;
+    flex-direction: column;
+    padding: 20px 0;
+    margin: 0;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.5);
+  }
+  
+  #mobile-menu-check:checked ~ ul.menu,
+  #mobile-menu-check:checked ~ nav .menu {
+    display: flex;
+  }
+
+  .top1_content ul.menu li,
+  .top1_content nav .menu li {
+    margin: 15px 0 !important;
+    text-align: center;
+    width: 100%;
+  }
+}
+
+.top1_content img {
+  height: 60px;
+}
+
+.container {
+  display: flex;
+  margin-left: 96px;
+  margin-top: 10px;
+}
+
+.type {
+  /* background-color: white; */
+  width: 240px;
+  height: auto;
+}
+
+.drive-type a, .drive-type label {
+  display: inline-block;
+  background-color: #181D25;
+  border-radius: 10px;
+  padding: 5px 10px;
+  margin-bottom: 10px;
+  color: #909296;
+  text-decoration: none;
+  border: 1px solid rgba(255, 255, 255, 0.12);
+  cursor: pointer;
+}
+
+.drive-type a:hover, .drive-type label:hover {
+  background-color: #e6d9d966;
+}
+
+.modal a, .modal label {
+  display: inline-block;
+  background-color: #181D25;
+  border-radius: 10px;
+  padding: 5px 10px;
+  margin-bottom: 10px;
+  color: #909296;
+  text-decoration: none;
+  border: 1px solid rgba(255, 255, 255, 0.12);
+  cursor: pointer;
+}
+
+.modal a:hover, .modal label:hover {
+  background-color: #e6d9d966;
+}
+
+.body-type a, .body-type label {
+  display: inline-block;
+  background-color: #181D25;
+  border-radius: 10px;
+  padding: 5px 10px;
+  margin-bottom: 10px;
+  color: #909299;
+  text-decoration: none;
+  border: 1px solid rgba(255, 255, 255, 0.12);
+  cursor: pointer;
+}
+
+.body-type a:hover, .body-type label:hover {
+  background-color: #e6d9d966;
+}
+
+
+.models {
+  margin-left: 36px;
+  /* background-color: red; */
+  width: 70%;
+  height: auto;
+  padding-bottom: 50px;
+}
+
+.models a {
+  display: inline-block;
+  text-decoration: none;
+  color: white;
+}
+
+/* ---------------- Filter System CSS ---------------- */
+input[name="carfilter"]:checked ~ .models .car-item {
+    display: none;
+}
+#filter-all:checked ~ .models .car-item { display: inline-block !important; }
+#filter-electric:checked ~ .models .car-electric { display: inline-block !important; }
+#filter-petrol:checked ~ .models .car-petrol { display: inline-block !important; }
+#filter-etron-gt:checked ~ .models .car-etron-gt { display: inline-block !important; }
+#filter-q6:checked ~ .models .car-q6 { display: inline-block !important; }
+#filter-a5:checked ~ .models .car-a5 { display: inline-block !important; }
+#filter-a6:checked ~ .models .car-a6 { display: inline-block !important; }
+#filter-sportback:checked ~ .models .car-sportback { display: inline-block !important; }
+#filter-sportscar:checked ~ .models .car-sportscar { display: inline-block !important; }
+#filter-suv:checked ~ .models .car-suv { display: inline-block !important; }
+#filter-sedan:checked ~ .models .car-sedan { display: inline-block !important; }
+#filter-coupe:checked ~ .models .car-coupe { display: inline-block !important; }
+
+#filter-electric:checked ~ .type .drive-type label[for="filter-electric"],
+#filter-petrol:checked ~ .type .drive-type label[for="filter-petrol"],
+#filter-etron-gt:checked ~ .type .modal label[for="filter-etron-gt"],
+#filter-q6:checked ~ .type .modal label[for="filter-q6"],
+#filter-a5:checked ~ .type .modal label[for="filter-a5"],
+#filter-a6:checked ~ .type .modal label[for="filter-a6"],
+#filter-sportback:checked ~ .type .body-type label[for="filter-sportback"],
+#filter-sportscar:checked ~ .type .body-type label[for="filter-sportscar"],
+#filter-suv:checked ~ .type .body-type label[for="filter-suv"],
+#filter-sedan:checked ~ .type .body-type label[for="filter-sedan"],
+#filter-coupe:checked ~ .type .body-type label[for="filter-coupe"],
+#filter-all:checked ~ .type label[for="filter-all"] {
+    background-color: white;
+    color: black;
+}
+
+.discover {
+  position: relative;
+  flex: 0 0 220px;
+  max-width: 220px;
+
+  background: #1a1f2a;
+  border-radius: 12px;
+  padding: 15px;
+
+  color: white;
+}
+
+.discover img {
+  width: 100%;
+  border-radius: 10px;
+  margin-bottom: 70px;
+}
+
+.discover .text {
+  position: absolute;
+  bottom: 20px;
+  width: calc(100% - 30px);
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  color: white;
+}
+
+.discover .text p {
+  margin: 0 0 10px 0;
+}
+
+.discover .a {
+  display: inline-block;
+  padding: 5px 20px;
+  border: 1px solid white;
+  border-radius: 20px;
+  transition: all 0.3s;
+}
+
+.discover .a:hover {
+  background-color: white;
+  color: black;
+}
+
+.footer {
+  background: black;
+  text-align: center;
+  padding: 20px;
+}
+
+.footer {
+  background: #000;
+  color: white;
+  padding: 40px 80px;
+}
+
+.footer_container {
+  text-align: left;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 30px;
+}
+
+.footer_container h4 {
+  margin-bottom: 15px;
+  font-size: 18px;
+  margin-bottom: 25px;
+}
+
+.footer_container p {
+  margin: 5px 0;
+  color: #ccc;
+  cursor: pointer;
+  margin-bottom: 10px;
+}
+
+.footer_container p:hover {
+  color: white;
+}

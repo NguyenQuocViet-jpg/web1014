@@ -1,0 +1,185 @@
+html, body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+}
+
+/* HEADER */
+header {
+    width: 100%;
+    background: #fff;
+    border-bottom: 1px solid #eee;
+}
+
+.top1_vin {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 12px 40px;
+    max-width: 1400px;
+    margin: 0 auto;
+}
+
+.vinlogo img {
+    height: 26px;
+}
+
+/* MENU */
+nav ul {
+    display: flex;
+    list-style: none;
+    gap: 25px;
+    align-items: center;
+}
+
+nav ul li {
+    position: relative;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #222;
+    font-size: 14px;
+    font-weight: 600;
+}
+
+/* SUBMENU */
+.submenu {
+    position: absolute;
+    top: 30px;
+    left: 0;
+    background: white;
+    list-style: none;
+    padding: 10px 0;
+    min-width: 120px;
+    display: none;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+}
+
+.submenu li {
+    padding: 8px 15px;
+}
+
+.submenu li a {
+    color: #333;
+    font-size: 13px;
+}
+
+.has-submenu:hover .submenu {
+    display: block;
+}
+
+/* BUTTON HEADER */
+.top1_vin > div:last-child {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.btn-login {
+    text-decoration: none;
+    color: #3875d7;
+    font-size: 14px;
+    font-weight: bold;
+}
+
+.btn-trial {
+    background-color: #3875d7;
+    color: white;
+    padding: 10px 18px;
+    text-decoration: none;
+    border-radius: 4px;
+    font-weight: bold;
+}
+
+/* LOGIN */
+.login-container {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+}
+
+.login-container h2 {
+    font-size: 32px;
+    margin-bottom: 30px;
+}
+
+form {
+    width: 100%;
+    max-width: 400px;
+    text-align: center;
+}
+
+/* INPUT */
+.input-group {
+    margin-bottom: 12px;
+    position: relative;
+}
+
+.input-group input {
+    width: 100%;
+    padding: 14px;
+    border: 1px solid #e0e0e0;
+    border-radius: 4px;
+}
+
+/* PASSWORD EYE */
+.password .eye {
+    position: absolute;
+    right: 12px;
+    top: 50%;
+    transform: translateY(-50%);
+    cursor: pointer;
+}
+
+/* OPTIONS */
+.options {
+    display: flex;
+    justify-content: space-between;
+    font-size: 13px;
+    color: #666;
+    margin: 15px 0 25px;
+}
+
+.options a {
+    text-decoration: none;
+    color: #666;
+}
+
+/* BUTTON FORM (TÁCH RIÊNG) */
+form .btn-login {
+    width: 100%;
+    padding: 14px;
+    background-color: #999;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.signup-text {
+    font-size: 13px;
+    color: #888;
+    margin: 20px 0 10px;
+}
+
+.btn-register {
+    width: 100%;
+    padding: 13px;
+    background: transparent;
+    color: #3875d7;
+    border: 1px solid #3875d7;
+    border-radius: 4px;
+    font-weight: bold;
+    cursor: pointer;
+}
